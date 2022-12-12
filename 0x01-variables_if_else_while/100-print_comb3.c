@@ -8,15 +8,18 @@ int main(void)
 {
 	int c, d;
 
-	for (c = '0'; c <= '9'; c++)
-		for (d = c + 1; d <= 10; d++)
+	for (c = 0; c < 10; c++)
+		for (d = c + 1; d < 10; d++)
 		{
-			putchar((c % 10) + 0);
-			putchar((d % 10) + 0);
-			if (c == 8 && d == 9)
+			if (!((c == d) || (c > d)))
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(c);
+				putchar(d);
+				if (!(c == '8' && d == '9'))
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	putchar('\n');
