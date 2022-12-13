@@ -6,16 +6,17 @@
  */
 int main(void)
 {
-	int c, d;
+	int c = 0;
+	int d = c + 1;
 
-	for (c = 0; c < 10; c++)
-		for (d = c + 1; d < 10; d++)
+	for (c = '0'; c <= '9'; c++)
+		for (d = '0'; d <= '9'; d++)
 		{
-			if (!((c == d) || (c > d)))
+			if (!(c == d) || (c > d))
 			{
 				putchar(c);
 				putchar(d);
-				if (!(c == '8' && d == '9'))
+				if (!(d == '9' && c == '8'))
 				{
 					putchar(',');
 					putchar(' ');
