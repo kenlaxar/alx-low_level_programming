@@ -1,5 +1,5 @@
 #ifndef MAIN
-#define		MAIN.H
+#define  "%[^\n]" MAIN.H
 
 int _putchar(char c);
 void print_alphabet(void);
