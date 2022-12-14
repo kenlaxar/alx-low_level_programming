@@ -3,7 +3,7 @@
 /**
  * print_alphabet - Entry point
  *
- * Return: print_alphabet
+ * Return: 1 (Success)
  */
 
 void print_alphabet(void)
@@ -15,5 +15,5 @@ void print_alphabet(void)
 		_putchar(a);
 	}
 	_putchar('\n');
-	return  (print_alphabet);
+	return  (1);
 }
