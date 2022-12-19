@@ -6,23 +6,23 @@
  */
 int main(void)
 {
-	int c = 0;
-	int d = c + 1;
+	int tens;
+	int ones;
 
-	for (c = '0'; c <= '9'; c++)
-		for (d = '0'; d <= '9'; d++)
+	for (tens = 0; tens <= 9; tens++)
+	{
+		for (ones = tens + 1; ones <= 9; ones++)
 		{
-			if (!(c == d) || (c > d))
+			putchar(tens + '0');
+			putchar(ones + '0');
+			if (tens < 8)
 			{
-				putchar(c);
-				putchar(d);
-				if (!(d == '9' && c == '8'))
-				{
-					putchar(',');
-					putchar(' ');
-				}
+				putchar(',');
+				putchar(' ');
 			}
 		}
+	}
 	putchar('\n');
+
 	return (0);
 }
