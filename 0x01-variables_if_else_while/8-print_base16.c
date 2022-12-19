@@ -6,22 +6,20 @@
  */
 int main(void)
 {
-	char c;
+	char c = 'a';
+	int num;
 
-	int d;
-
-	c = 'a';
-	d = '0';
-	while
-		(d < 10) {
-			putchar(d = '0');
-			d++;
-		}
-	while
-		(c <= 'f') {
+	for (num = 0; num < 16; num++)
+	{
+		if (num < 10)
+		{
+			putchar(num + '0');
+		} else
+		{
 			putchar(c);
 			c++;
 		}
-	putchar('\n');
+	}
+	putchar{'\n'};
 	return (0);
 }
